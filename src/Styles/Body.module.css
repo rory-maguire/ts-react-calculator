@@ -1,4 +1,11 @@
 .body {
 	height: 70%;
-	border: 2px green solid;
+	display: grid;
+	border: 2px solid red;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas:
+		"keypad keypad keypad operators"
+		"keypad keypad keypad operators"
+		"keypad keypad keypad operators"
+		"clearBtn equalsBtn equalsBtn equalsBtn";
 }

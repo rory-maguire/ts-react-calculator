@@ -1,0 +1,4 @@
+.equalsBtn {
+	border: 2px solid blue;
+	grid-area: equalsBtn;
+}

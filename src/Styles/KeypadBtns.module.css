@@ -1,0 +1,4 @@
+.keypad {
+	border: 2px solid red;
+	grid-area: keypad;
+}
