@@ -11,7 +11,7 @@ interface IProps {
 
 const EqualsBtn: React.FC<IProps> = ({ dispatch }) => {
 	return (
-		<div className={styles.container}>
+		<div className={styles.equalsBtn}>
 			<button
 				className={styles.btn}
 				onClick={() => dispatch({ type: ACTIONS.CALCULATE, payload: "" })}
