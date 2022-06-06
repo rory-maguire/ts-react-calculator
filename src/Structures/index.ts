@@ -13,3 +13,15 @@ export const keypad: string[] = [
 	".",
 ];
 export const operators: string[] = ["+", "-", "x", "÷"];
+
+export interface IDisplayState {
+	previousValue: string;
+	currentValue: string;
+	operation: string;
+}
+
+export const initialState: IDisplayState = {
+	previousValue: "",
+	currentValue: "",
+	operation: "",
+};
