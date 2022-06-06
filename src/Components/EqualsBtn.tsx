@@ -3,15 +3,21 @@ import React from "react";
 import styles from "../Styles/EqualsBtn.module.css";
 
 import { Dispatch } from "react";
-import { ICalculatorActions } from "../Structures";
+import { ICalculatorActions, ACTIONS } from "../Structures";
+
 interface IProps {
 	dispatch: Dispatch<ICalculatorActions>;
 }
 
 const EqualsBtn: React.FC<IProps> = ({ dispatch }) => {
 	return (
-		<div className={styles.equalsBtn}>
-			<button className={styles.btn}>=</button>
+		<div className={styles.container}>
+			<button
+				className={styles.btn}
+				onClick={() => dispatch({ type: ACTIONS.CALCULATE, payload: "" })}
+			>
+				=
+			</button>
 		</div>
 	);
 };
