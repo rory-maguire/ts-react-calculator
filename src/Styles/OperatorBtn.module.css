@@ -1,0 +1,6 @@
+.btn {
+	background-color: var(--operator-btn);
+	color: var(--btn-font-color);
+	margin: 0.3em;
+	border-radius: 10px;
+}

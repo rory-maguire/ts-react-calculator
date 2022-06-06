@@ -1,3 +1,4 @@
 .operators {
 	grid-area: operators;
+	display: grid;
 }
