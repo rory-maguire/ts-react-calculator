@@ -3,7 +3,11 @@ import React from "react";
 import styles from "../Styles/ClearBtn.module.css";
 
 const ClearBtn = () => {
-	return <div className={styles.clearBtn}>C</div>;
+	return (
+		<div className={styles.clearBtn}>
+			<button className={styles.btn}>c</button>
+		</div>
+	);
 };
 
 export default ClearBtn;
