@@ -13,6 +13,9 @@ export const reducer = (
 				...state,
 				currentValue: `${state.currentValue}${action.payload}`,
 			};
+		case ACTIONS.DELETE_NUMBER:
+			//remove most recently appended value
+			return { ...state, currentValue: state.currentValue.slice(0, -1) };
 	}
 	return { currentValue: "", previousValue: "", operation: "" };
 };
