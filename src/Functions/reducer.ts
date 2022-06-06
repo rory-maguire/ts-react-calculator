@@ -9,6 +9,11 @@ export const reducer = (
 ): IDisplayState => {
 	switch (action.type) {
 		case ACTIONS.ADD_NUMBER:
+			//don't let user type multiple ... or 000
+			if (state.currentValue === "O" && action.payload === "0") return state;
+			if (action.payload === "." && state.currentValue.includes("."))
+				return state;
+
 			//spread state and overwrite current value by appending value of pressed btn
 			return {
 				...state,
