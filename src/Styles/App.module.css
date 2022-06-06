@@ -1,0 +1,34 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Major Mono Display", monospace;
+	font-size: 1.1em;
+}
+
+:root {
+	--bg: #363537;
+	--operator-btn: #ff8200;
+	--operator-btn-hover: #ad5800;
+	--digit-btn: #ededf4;
+	--digit-btn-hover: #9b9b9e;
+	--display-bg: #d4d2d5;
+	--btn-font-color: #363537;
+	--display-font-color: #a71b19;
+	--equals-btn: #a71b19;
+	--equals-btn-hover: #871614;
+}
+
+body {
+	background-color: #f9f9ed;
+}
+
+.container {
+	height: 60vh;
+	width: 30%;
+	border-radius: 20px;
+	background-color: var(--bg);
+	margin: auto;
+	padding: 1em;
+	margin-top: 25vh;
+}
