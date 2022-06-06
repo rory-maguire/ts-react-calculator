@@ -1,6 +1,7 @@
-import { ICalculatorActions } from "../Structures";
+import { ICalculatorActions, initialState } from "../Structures";
 import { IDisplayState } from "../Structures";
 import { ACTIONS } from "../Structures";
+import { calculate } from "./calculate";
 
 export const reducer = (
 	state: IDisplayState,
@@ -24,6 +25,18 @@ export const reducer = (
 				previousValue: state.currentValue,
 				operation: action.payload,
 			};
+		case ACTIONS.CLEAR:
+			//empty strings
+			return initialState;
+		case ACTIONS.CALCULATE:
+			//pass the values to calculate fn
+			return {
+				...state,
+				currentValue: calculate(
+					state.currentValue,
+					state.previousValue,
+					state.operation
+				),
+			};
 	}
-	return { currentValue: "", previousValue: "", operation: "" };
 };
