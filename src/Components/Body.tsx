@@ -18,10 +18,10 @@ interface IProps {
 const Body: React.FC<IProps> = ({ dispatch }) => {
 	return (
 		<div className={styles.body}>
-			<KeypadBtns />
-			<OperatorBtns />
-			<ClearBtn />
-			<EqualsBtn />
+			<KeypadBtns dispatch={dispatch} />
+			<OperatorBtns dispatch={dispatch} />
+			<ClearBtn dispatch={dispatch} />
+			<EqualsBtn dispatch={dispatch} />
 		</div>
 	);
 };
