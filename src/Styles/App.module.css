@@ -32,3 +32,23 @@ body {
 	padding: 1em;
 	margin-top: 25vh;
 }
+
+@media (max-width: 1190px) {
+	.container {
+		height: 60vh;
+		width: 40vw;
+	}
+}
+@media (max-width: 865px) {
+	.container {
+		height: 65vh;
+		width: 45vw;
+	}
+}
+
+@media (max-width: 500px) {
+	.container {
+		height: 60vh;
+		width: 90vw;
+	}
+}

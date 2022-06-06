@@ -22,3 +22,36 @@
 	justify-content: flex-end;
 	font-size: 4vw;
 }
+
+@media (max-width: 1190px) {
+	.currentValue {
+		height: 60%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		font-size: 8vw;
+	}
+}
+
+@media (max-width: 865px) {
+	.currentValue {
+		height: 60%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		font-size: 11vw;
+	}
+}
+
+@media (max-width: 500px) {
+	.currentValue {
+		height: 60%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		font-size: 15vw;
+	}
+}

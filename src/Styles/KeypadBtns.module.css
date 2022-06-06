@@ -3,3 +3,27 @@
 	display: grid;
 	grid-template-columns: repeat(3, 6.5vw);
 }
+
+@media (max-width: 1190px) {
+	.keypad {
+		grid-area: keypad;
+		display: grid;
+		grid-template-columns: repeat(3, 9vw);
+	}
+}
+
+@media (max-width: 865px) {
+	.keypad {
+		grid-area: keypad;
+		display: grid;
+		grid-template-columns: repeat(3, 10vw);
+	}
+}
+
+@media (max-width: 500px) {
+	.keypad {
+		grid-area: keypad;
+		display: grid;
+		grid-template-columns: repeat(3, 19vw);
+	}
+}
