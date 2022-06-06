@@ -1,4 +1,5 @@
 .keypad {
-	border: 2px solid red;
 	grid-area: keypad;
+	display: grid;
+	grid-template-columns: repeat(3, 6.5vw);
 }

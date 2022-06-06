@@ -1,7 +1,7 @@
 .body {
 	height: 70%;
 	display: grid;
-	border: 2px solid red;
+
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-areas:
 		"keypad keypad keypad operators"
