@@ -14,20 +14,33 @@ export const reducer = (
 				...state,
 				currentValue: `${state.currentValue}${action.payload}`,
 			};
+
 		case ACTIONS.DELETE_NUMBER:
 			//remove most recently appended value
 			return { ...state, currentValue: state.currentValue.slice(0, -1) };
+
 		case ACTIONS.CHOOSE_OPERATOR:
 			//receive chosen operator in payload + await new currentValue
+			if (state.previousValue === "")
+				return {
+					...state,
+					currentValue: "",
+					previousValue: state.currentValue,
+					operation: action.payload,
+				};
+
+			//if user continues calculation, update previous value each time
 			return {
 				...state,
+				previousValue: calculate(
+					state.currentValue,
+					state.previousValue,
+					state.operation
+				),
 				currentValue: "",
-				previousValue: state.currentValue,
 				operation: action.payload,
 			};
-		case ACTIONS.CLEAR:
-			//empty strings
-			return initialState;
+
 		case ACTIONS.CALCULATE:
 			//pass the values to calculate fn
 			return {
@@ -38,5 +51,8 @@ export const reducer = (
 					state.operation
 				),
 			};
+		case ACTIONS.CLEAR:
+			//empty strings
+			return initialState;
 	}
 };
