@@ -16,6 +16,14 @@ export const reducer = (
 		case ACTIONS.DELETE_NUMBER:
 			//remove most recently appended value
 			return { ...state, currentValue: state.currentValue.slice(0, -1) };
+		case ACTIONS.CHOOSE_OPERATOR:
+			//receive chosen operator in payload + await new currentValue
+			return {
+				...state,
+				currentValue: "",
+				previousValue: state.currentValue,
+				operation: action.payload,
+			};
 	}
 	return { currentValue: "", previousValue: "", operation: "" };
 };
