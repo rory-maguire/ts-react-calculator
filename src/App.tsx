@@ -12,8 +12,12 @@ export function App() {
 	const { currentValue, previousValue, operation } = state;
 	return (
 		<div className={styles.container}>
-			<Display />
-			<Body />
+			<Display
+				currentValue={currentValue}
+				previousValue={previousValue}
+				operation={operation}
+			/>
+			<Body dispatch={dispatch} />
 		</div>
 	);
 }
