@@ -50,6 +50,7 @@ export const reducer = (
 					state.previousValue,
 					state.operation
 				),
+				previousValue: "",
 			};
 		case ACTIONS.CLEAR:
 			//empty strings
