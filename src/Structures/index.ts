@@ -25,3 +25,16 @@ export const initialState: IDisplayState = {
 	currentValue: "",
 	operation: "",
 };
+
+export enum ACTIONS {
+	ADD_NUMBER = "add-number",
+	DELETE_NUMBER = "delete-number",
+	CLEAR = "clear",
+	CHOOSE_OPERATOR = "choose-operator",
+	CALCULATE = "calculate",
+}
+
+export interface ICalculatorActions {
+	type: ACTIONS;
+	payload: string;
+}
