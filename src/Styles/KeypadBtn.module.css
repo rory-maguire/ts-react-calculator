@@ -3,4 +3,10 @@
 	color: var(--btn-font-color);
 	margin: 0.3em;
 	border-radius: 10px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: var(--digit-btn-hover);
+	transition: ease-in-out 250ms;
 }
