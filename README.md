@@ -7,7 +7,7 @@ https://rainbow-cannoli-2756ee.netlify.app/
 - useReducer to manage state and account for different actions, dispatch fn onClick of each btn
 - stores and displays result of previous calculations in process of displaying final result of same calculation 
 - interfaces, enums and other structures stored in separate file and exported around app
-- uses Howler library to work with sfx
+- uses Howler library to work with sfx (Clicks and Blips)
 - media queries to resize calculator for mobile viewing (iPhone X, Samsung Galaxy S8+ and others)
 - subtle animations
 - 
