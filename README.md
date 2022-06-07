@@ -10,7 +10,7 @@ https://rainbow-cannoli-2756ee.netlify.app/
 - uses Howler library to work with sfx (Clicks and Blips)
 - media queries to resize calculator for mobile viewing (iPhone X, Samsung Galaxy S8+ and others)
 - subtle animations
-- 
+
 
 1st sketch idea of how calculator should appear: 
 <img src="https://res.cloudinary.com/dzektczea/image/upload/v1654598335/Screenshot_2022-06-07_at_09.03.22_ndgnky.png" width="500px" height= "300px">
