@@ -1,7 +1,6 @@
 import React from "react";
 //styles
 import styles from "../Styles/EqualsBtn.module.css";
-
 import { Dispatch } from "react";
 import { ICalculatorActions, ACTIONS } from "../Structures";
 import { Howl } from "howler";

@@ -12,13 +12,13 @@ export const calculate = (
 			result = prev + curr;
 			break;
 		case "-":
-			result = prev - curr;
+			result = curr - prev;
 			break;
 		case "x":
 			result = prev * curr;
 			break;
 		case "÷":
-			result = prev / curr;
+			result = curr / prev;
 			break;
 		default:
 			return result;

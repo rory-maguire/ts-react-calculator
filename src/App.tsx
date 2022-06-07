@@ -10,6 +10,7 @@ import { reducer } from "./Functions/reducer";
 export function App() {
 	const [state, dispatch] = useReducer(reducer, initialState);
 	const { currentValue, previousValue, operation } = state;
+
 	return (
 		<div className={styles.container}>
 			<Display
