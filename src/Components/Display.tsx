@@ -1,10 +1,12 @@
 //styles
 import styles from "../Styles/Display.module.css";
+
 interface IProps {
 	currentValue: string;
 	previousValue: string;
 	operation: string;
 }
+
 const Display: React.FC<IProps> = ({
 	currentValue,
 	previousValue,

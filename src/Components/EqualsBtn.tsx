@@ -1,10 +1,14 @@
-import React from "react";
 //styles
 import styles from "../Styles/EqualsBtn.module.css";
+//special type given by react
 import { Dispatch } from "react";
-import { ICalculatorActions, ACTIONS } from "../Structures";
+//structures
+import { ICalculatorActions } from "../Structures";
+import { ACTIONS } from "../Structures";
+//library to work with sfx
 import { Howl } from "howler";
-import blip from "../sfx/Video Game Beep - Sound Effect.mp3";
+//sfx
+import blip from "../sfx/blip.mp3";
 
 interface IProps {
 	dispatch: Dispatch<ICalculatorActions>;

@@ -1,9 +1,11 @@
+//special type given by react
 import { Dispatch } from "react";
+//structures
 import { ICalculatorActions } from "../Structures";
 //styles
 import styles from "../Styles/OperatorBtns.module.css";
 import { operators } from "../Structures";
-
+//components
 import OperatorBtn from "./OperatorBtn";
 
 interface IProps {

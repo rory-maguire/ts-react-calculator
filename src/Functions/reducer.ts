@@ -1,4 +1,6 @@
-import { ICalculatorActions, initialState } from "../Structures";
+//structures
+import { ICalculatorActions } from "../Structures";
+import { initialState } from "../Structures";
 import { IDisplayState } from "../Structures";
 import { ACTIONS } from "../Structures";
 import { calculate } from "./calculate";

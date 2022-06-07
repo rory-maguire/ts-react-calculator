@@ -1,13 +1,14 @@
-import React from "react";
+//special type given by react
+import { Dispatch } from "react";
 //styles
 import styles from "../Styles/ClearBtn.module.css";
-
-import { Dispatch } from "react";
+//structures
 import { ICalculatorActions } from "../Structures";
 import { ACTIONS } from "../Structures";
-
+//libary to work with sfx
 import { Howl } from "howler";
-import buttonClick from "../sfx/Button_Plate Click (Minecraft Sound) - Sound Effect for editing.mp3";
+//sfx
+import buttonClick from "../sfx/click.mp3";
 
 const clickSound = new Howl({
 	src: [buttonClick],

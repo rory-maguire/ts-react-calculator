@@ -4,7 +4,7 @@
 	grid-template-columns: repeat(3, 6.5vw);
 }
 
-@media (max-width: 1190px) {
+@media (max-width: 1405px) {
 	.keypad {
 		grid-area: keypad;
 		display: grid;
@@ -12,7 +12,7 @@
 	}
 }
 
-@media (max-width: 865px) {
+@media (max-width: 1020px) {
 	.keypad {
 		grid-area: keypad;
 		display: grid;

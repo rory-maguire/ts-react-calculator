@@ -37,13 +37,13 @@ body {
 	box-shadow: 0px 5px 15px 10px darkgrey;
 }
 
-@media (max-width: 1190px) {
+@media (max-width: 1405px) {
 	.container {
-		height: 60vh;
+		height: 70vh;
 		width: 40vw;
 	}
 }
-@media (max-width: 865px) {
+@media (max-width: 1020px) {
 	.container {
 		height: 65vh;
 		width: 45vw;

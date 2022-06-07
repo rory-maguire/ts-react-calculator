@@ -1,8 +1,11 @@
+//special type given by react
 import { Dispatch } from "react";
 //styles
 import styles from "../Styles/KeypadBtns.module.css";
-
-import { ICalculatorActions, keypad } from "../Structures";
+//structures
+import { ICalculatorActions } from "../Structures";
+import { keypad } from "../Structures";
+//components
 import KeypadBtn from "./KeypadBtn";
 
 interface IProps {
